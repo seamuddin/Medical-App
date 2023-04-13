@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'fontawesome/css/all.css' %}">
+</head>
+<body>
+
+{% include 'header.html' %}
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="about-background"
+                     style="background: url('{% static 'images/left-content.png' %}')no-repeat center center/ cover; height:100%; width:100%">
+
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="p-4" style="max-width: 420px">
+                    <h3>Medical Centre</h3>
+                    <p>
+                        IUT has a Medical Center at the North- West corner of the campus.
+                        It has five well equipped observation beds, Mini operation Room, Medicine store,waiting area,
+                        and a pathological laboratory currently launched. It provides normal Medicare to the students,
+                        faculties, staff, and the family members. Necessary medicines are also available in the
+                        store.There are three doctors, two nurses doing the duties round the clock 24/7.In case of
+                        emergency the doctor on duty can be contacted on the Medical Centre Hotline: +88 01844 056056.
+                        Doctors’ personal numbers are mentioned below-
+                    </p>
+                    <a href="">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="doctor-section">
+    <div class="container p-5">
+        <div class="section-header pb-3">
+            <h3>Our Doctors</h3>
+            <p style="width: 400px;">
+                Advice from one of the IUT Physicians must be sought before hospitalization.Students must also take
+                prior permission from one of the IUT Doctors before going to an outside medical specialist for
+                consultation.
+            </p>
+
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-img-top"
+                         style="background: url('{% static 'images/doctor2.jpg' %}')no-repeat center center/ cover;">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Fakharuddin Ahmed</h5>
+                        <p class="card-text">Chief Medical Officer.</p>
+                        <p class="card-text">+88018000000000.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-img-top"
+                         style="background: url('{% static 'images/doctor3.jpg' %}')no-repeat center center/ cover;">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Md. Ali Tareq</h5>
+                        <p class="card-text">Chief Medical Officer.</p>
+                        <p class="card-text">+88018000000000.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-img-top"
+                         style="background: url('{% static 'images/doctor1.jpg' %}')no-repeat center center/ cover;">
+
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dr. Salma Khatun</h5>
+                        <p class="card-text">Chief Medical Officer.</p>
+                        <p class="card-text">+88018000000000.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="footer-section">
+    <div class="container p-5">
+        <div class="row">
+            <div class="col-3">
+                <div class="footer-menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Contact Us</li>
+                        <li>Follow Us</li>
+                    </ul>
+                    <div class="social-media">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="footer-middle">
+                     <img src="{% static 'images/main-logo.png' %}"  width="50" alt="">
+                    <h4>Islamic University of Technology</h4>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="footer-contact">
+                    <p>Islamic University of Technology</p>
+                    <p>Boardbazar , Gazipur</p>
+                    <p>Bangladesh</p>
+                    <p>Call : +8802996691254-59</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+</html>
